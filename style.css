@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-boxs;
+}
+
+.container {
+  min-height: 100vh;
+  background-image: url(images/pexels-deeana-arts-2418645.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 2% 10%;
+}
+nav {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625em 0;
+}
+.img_bolloon {
+  width: 3.375rem;
+  cursor: pointer;
+  filter: drop-shadow(1px 1px 2px #000000);
+}
+
+.img_bolloon:hover {
+  color: rgb(185, 185, 31);
+}
+span {
+  font-size: 2.25rem;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px #000000;
+}
+.logo {
+  width: 11.25rem;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  width: 100%;
+  text-align: right;
+  padding-right: 3.37rem;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0.625rem 1.25rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: yellow;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 0.625rem 1.25rem;
+  border: 0;
+  outline: 0;
+  border-radius: 1.563rem;
+  background-color: yellow;
+  color: blue;
+  font-weight: 500;
+  cursor: pointer;
+}
+.content {
+  margin-top: 15%;
+  color: #fff;
+  max-width: 38.75rem;
+  position: absolute;
+  left: 50%;
+}
+
+.content h1 {
+  font-size: 4.375rem;
+  font-weight: 600;
+  line-height: 5.313rem;
+  padding: 1.563rem 0;
+  animation-delay: 0.25s;
+}
+.content p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  animation-delay: 0.5s;
+  /* padding: 25px 0; */
+}
+
+.content form {
+  display: flex;
+  font: inherit;
+  align-items: center;
+  background: #fff;
+  padding: 0.625rem;
+  margin-top: 1.875rem;
+  border-radius: 1.25rem;
+  animation-delay: 1s;
+}
+
+.content form input {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  font-size: 1rem;
+
+  padding-left: 0.625rem;
+}
+
+.content form .btn {
+  font-size: 1rem;
+  padding: 0.625rem 1.875rem;
+}
+
+.animation {
+  opacity: 0;
+  transform: translateY(1.875rem);
+  animation: textup 0.5s linear forwards;
+}
+
+@keyframes textup {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
